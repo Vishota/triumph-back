@@ -1,4 +1,3 @@
-// src/routes/childrenRoutes.ts
 import { Router } from 'express';
 import {
   updateChildTeam, deleteChild

@@ -1,8 +1,7 @@
-// src/models/request.ts
 export interface Request {
-  id: number;
-  firstName: string;
-  lastName: string;
-  phone: string;
-  branch: string;
+	id: number;
+	name: string;
+	surname: string;
+	phone: string;
+	branch: string;
 }

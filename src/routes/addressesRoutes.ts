@@ -1,7 +1,6 @@
-// src/routes/addressesRoutes.ts
 import { Router } from 'express';
 import {
-  getAddresses, getAddressById, createAddress, updateAddress, deleteAddress
+	getAddresses, getAddressById, createAddress, updateAddress, deleteAddress
 } from '../controllers/addressesController';
 
 const router = Router();

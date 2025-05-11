@@ -1,4 +1,3 @@
-// src/routes/usersRoutes.ts
 import { Router } from 'express';
 import {
   getUsers, getUserById, deleteUser

@@ -1,4 +1,3 @@
-// src/routes/schedulesRoutes.ts
 import { Router } from 'express';
 import {
   getSchedules, getScheduleById, createSchedule, updateSchedule, deleteSchedule

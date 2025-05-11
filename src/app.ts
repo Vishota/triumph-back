@@ -28,12 +28,12 @@ const clientBuildPath = path.join(__dirname, '../client/dist');
 app.use(express.static(clientBuildPath));
 
 app.use((req, res, next) => {
-  if (req.path.startsWith('/api/')) {
-    res.status(404).json({ error: 'Not found' });
-  } else {
-    res.sendFile(path.join(clientBuildPath, 'index.html'));
-  }
+	if (req.path.startsWith('/api/')) {
+		res.status(404).json({ error: 'Not found' });
+	} else {
+		res.sendFile(path.join(clientBuildPath, 'index.html'));
+	}
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT} http://localhost:${PORT}/`));

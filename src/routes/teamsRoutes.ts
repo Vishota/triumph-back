@@ -1,4 +1,3 @@
-// src/routes/teamsRoutes.ts
 import { Router } from 'express';
 import {
   getTeams, getTeamById, createTeam, updateTeam, deleteTeam

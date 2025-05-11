@@ -1,4 +1,3 @@
-// src/services/bookingService.ts
 import { db } from '../database';
 import { Request as BookingRequest } from '../models/request';
 
@@ -9,7 +8,7 @@ export class BookingService {
         `INSERT INTO requests (firstName, lastName, phone, branch)
          VALUES (?, ?, ?, ?)`
       )
-      .run(r.firstName, r.lastName, r.phone, r.branch);
+      .run(r.name, r.surname, r.phone, r.branch);
     return { id: info.lastInsertRowid as number, ...r };
   }
 }

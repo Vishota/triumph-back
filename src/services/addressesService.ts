@@ -1,4 +1,3 @@
-// src/services/addressesService.ts
 import { db } from '../database';
 import { Address } from '../models/address';
 

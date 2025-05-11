@@ -1,4 +1,3 @@
-// src/models/child.ts
 export interface Child {
     id: number;
     userId: number;
@@ -6,5 +5,5 @@ export interface Child {
     lastName: string;
     birthDate: string;
     team: string;
-  }
+}
   

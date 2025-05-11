@@ -1,4 +1,3 @@
-// src/routes/parentRoutes.ts
 import { Router } from 'express';
 import { updateParentDetails } from '../controllers/parentController';
 import { authMiddleware } from '../middleware/auth';

@@ -1,4 +1,3 @@
-// src/controllers/authController.ts
 import { Request, Response } from 'express';
 import { authService } from '../services/authService';
 import { AuthRequest } from '../middleware/auth';
@@ -25,9 +24,9 @@ export async function login(req: Request, res: Response) {
     }
 }
 
-export function getAccount(req: AuthRequest, res: Response) {
+export async function getAccount(req: AuthRequest, res: Response) {
     try {
-        const user = authService.getAccount(req.userId!);
+        const user = await authService.getAccount(req.userId!);
         res.json(user);
     } catch (e) {
         console.error(e)

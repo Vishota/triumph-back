@@ -59,7 +59,7 @@ function AccountPage() {
   if (!userData) return null;
 
   const { parent } = userData;
-  const child = userData.children[0] // needs to be changed
+  const child = userData.children[0] // todo: list all children
 
   console.log({child})
 
